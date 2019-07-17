@@ -11,18 +11,22 @@ func main() {
 	//	fmt.Println(i, card)
 	//}
 
+	// Original
+	//cards := newDeck()
+	//
+	//hand, remainingCards := deal(cards, 5)
+	//
+	//cards.print()
+	//fmt.Println("")
+	//hand.print()
+	//fmt.Println("")
+	//remainingCards.print()
+	//fmt.Println("")
+
 	cards := newDeck()
+	//cards.toString()
 
-	hand, remainingCards := deal(cards, 5)
-
-	cards.print()
-	fmt.Println("")
-	hand.print()
-	fmt.Println("")
-	remainingCards.print()
-	fmt.Println("")
-
-
+	fmt.Println(cards.toString())
 }
 
 func newCard() string {
