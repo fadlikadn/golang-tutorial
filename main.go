@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 func main() {
 	//cards := []string{"Ace of Diamonds", newCard()}
 	//cards := deck{"Ace of Diamonds", newCard()}
@@ -24,9 +22,7 @@ func main() {
 	//fmt.Println("")
 
 	cards := newDeck()
-	//cards.toString()
-
-	fmt.Println(cards.toString())
+	cards.saveToFile("my_cards")
 }
 
 func newCard() string {
